@@ -19,8 +19,8 @@ async function main() {
     const results = [];
 
     while (true) {
-        const num1 = await askQuestion(rl, "Masukkan angka pertama (atau ketik 'exit' untuk keluar): ");
-        if (num1.toLowerCase() === 'exit') break;
+        const num1 = await askQuestion(rl, "Masukkan angka pertama (atau ketik 'q' untuk keluar): ");
+        if (num1.toLowerCase() === 'q') break;
 
         const num2 = await askQuestion(rl, "Masukkan angka kedua: ");
 
